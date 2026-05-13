@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Prayer First</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream: #FAF9F6; --forest: #2C3E2D; --sage: #7D9B76;
+      --gold: #D4A574; --muted: #6B7B6C; --card: #F3F1EC;
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--cream); color: var(--forest); }
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 40px; max-width: 1100px; margin: 0 auto;
+      border-bottom: 1px solid rgba(44,62,45,0.08);
+    }
+    .nav-logo {
+      font-family: 'Lora', serif; font-size: 1.25rem; font-weight: 600;
+      color: var(--forest); text-decoration: none;
+    }
+    .nav-back {
+      font-size: 0.875rem; color: var(--muted); text-decoration: none;
+      display: flex; align-items: center; gap: 6px; transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--forest); }
+    .doc {
+      max-width: 720px; margin: 60px auto; padding: 0 24px 100px;
+    }
+    .doc-eyebrow {
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--sage); margin-bottom: 12px;
+    }
+    .doc h1 {
+      font-family: 'Lora', serif; font-size: 2.2rem; margin-bottom: 8px;
+      line-height: 1.2;
+    }
+    .doc-meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 48px; }
+    .doc h2 {
+      font-family: 'Lora', serif; font-size: 1.15rem; font-weight: 600;
+      margin: 40px 0 12px; color: var(--forest);
+    }
+    .doc p { font-size: 0.95rem; line-height: 1.75; color: #3a4a3b; margin-bottom: 14px; }
+    .doc ul { padding-left: 20px; margin-bottom: 14px; }
+    .doc ul li { font-size: 0.95rem; line-height: 1.75; color: #3a4a3b; margin-bottom: 6px; }
+    .doc a { color: var(--sage); text-decoration: underline; }
+    footer {
+      border-top: 1px solid rgba(44,62,45,0.1); padding: 28px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px; max-width: 1100px; margin: 0 auto;
+    }
+    .footer-copy { font-size: 0.8rem; color: var(--muted); }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size: 0.8rem; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--forest); }
+    @media (max-width: 600px) { nav { padding: 16px 20px; } footer { padding: 24px 20px; justify-content: center; text-align: center; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">Prayer First</a>
+    <a class="nav-back" href="/">← Back</a>
+  </nav>
+
+  <main class="doc">
+    <p class="doc-eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="doc-meta">Effective date: May 3, 2025 &nbsp;·&nbsp; Last updated: May 3, 2025</p>
+
+    <p>Prayer First ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how information is handled when you use the Prayer First iOS app.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>Prayer First is designed to work entirely on your device. We do <strong>not</strong> operate servers, create user accounts, or transmit your personal data to any third party.</p>
+    <p>Data stored locally on your device includes:</p>
+    <ul>
+      <li>Your first name (entered during onboarding)</li>
+      <li>Prayer history (dates and text of prayers you've completed)</li>
+      <li>Streak and milestone data</li>
+      <li>Reflection entries (mood and connection scores)</li>
+      <li>Lock schedule preferences</li>
+      <li>App usage settings and onboarding state</li>
+    </ul>
+    <p>This data is stored using Apple's <strong>UserDefaults</strong> and <strong>App Groups</strong> (for sharing data between the app and its extensions). It lives on your device and is not transmitted elsewhere.</p>
+
+    <h2>2. Screen Time &amp; App Blocking</h2>
+    <p>Prayer First uses Apple's <strong>Screen Time API (Family Controls / ManagedSettings)</strong> to block apps you choose until you complete your daily prayer. This permission is granted by you during onboarding and can be revoked at any time in iOS Settings → Screen Time. Prayer First does not have access to your Screen Time usage data beyond what is necessary to apply and remove the blocks you configure.</p>
+
+    <h2>3. Notifications</h2>
+    <p>If you grant notification permission, Prayer First schedules local reminders on-device to nudge you toward your daily prayer. These notifications are generated and delivered entirely on your device — no notification server or push infrastructure is used.</p>
+
+    <h2>4. Analytics &amp; Crash Reporting</h2>
+    <p>Prayer First does not use any third-party analytics, advertising, or crash reporting SDKs. No data is shared with advertising networks or data brokers.</p>
+
+    <h2>5. Children's Privacy</h2>
+    <p>Prayer First is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information through the app, please contact us and we will take steps to remove it.</p>
+
+    <h2>6. iCloud &amp; Backups</h2>
+    <p>Your data may be included in your device's standard iCloud backup if you have iCloud Backup enabled in your iOS settings. This is controlled entirely by Apple's backup system, not by Prayer First.</p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be reflected on this page with an updated effective date. Continued use of the app after changes constitutes acceptance of the revised policy.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy, please contact us at:<br />
+    <a href="mailto:support@betterapplications.app">support@betterapplications.app</a></p>
+  </main>
+
+  <footer>
+    <span class="footer-copy">© 2025 Prayer First. All rights reserved.</span>
+    <nav class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="mailto:support@betterapplications.app">Contact</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
