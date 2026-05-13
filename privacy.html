@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — Prayer First</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -44,10 +46,17 @@
       font-family: 'Lora', serif; font-size: 1.15rem; font-weight: 600;
       margin: 40px 0 12px; color: var(--forest);
     }
+    .doc h3 {
+      font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600;
+      margin: 24px 0 8px; color: var(--forest);
+    }
     .doc p { font-size: 0.95rem; line-height: 1.75; color: #3a4a3b; margin-bottom: 14px; }
     .doc ul { padding-left: 20px; margin-bottom: 14px; }
     .doc ul li { font-size: 0.95rem; line-height: 1.75; color: #3a4a3b; margin-bottom: 6px; }
     .doc a { color: var(--sage); text-decoration: underline; }
+    .doc table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.9rem; }
+    .doc th, .doc td { text-align: left; padding: 10px 12px; border-bottom: 1px solid rgba(44,62,45,0.1); vertical-align: top; }
+    .doc th { font-weight: 600; color: var(--forest); background: var(--card); }
     footer {
       border-top: 1px solid rgba(44,62,45,0.1); padding: 28px 40px;
       display: flex; align-items: center; justify-content: space-between;
@@ -70,48 +79,102 @@
   <main class="doc">
     <p class="doc-eyebrow">Legal</p>
     <h1>Privacy Policy</h1>
-    <p class="doc-meta">Effective date: May 3, 2025 &nbsp;·&nbsp; Last updated: May 3, 2025</p>
+    <p class="doc-meta">Effective date: May 13, 2026 &nbsp;·&nbsp; Last updated: May 13, 2026</p>
 
-    <p>Prayer First ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how information is handled when you use the Prayer First iOS app.</p>
+    <p>This Privacy Policy describes how <strong>Better Applications LLC</strong>, a New Jersey limited liability company ("Better Applications," "we," "us," or "our"), collects, uses, and protects information in connection with the <strong>Prayer First</strong> mobile application (the "App"). "Prayer First" is a product of Better Applications LLC. By downloading or using the App, you acknowledge that you have read and understood this Privacy Policy.</p>
 
-    <h2>1. Information We Collect</h2>
-    <p>Prayer First is designed to work entirely on your device. We do <strong>not</strong> operate servers, create user accounts, or transmit your personal data to any third party.</p>
-    <p>Data stored locally on your device includes:</p>
+    <h2>1. Summary</h2>
+    <p>Prayer First is designed to operate <strong>entirely on your device</strong>. We do not run servers that store your personal data, do not require you to create an account, and do not sell or share your personal information. The only off-device transmission of data we facilitate is your purchase or subscription transaction, which is handled by Apple and not by us.</p>
+
+    <h2>2. Information We Collect</h2>
+
+    <h3>2.1 Information stored locally on your device</h3>
+    <p>The following information is created by you while using the App and stored locally on your device (in iOS <strong>UserDefaults</strong> and a shared <strong>App Group</strong> container so the App and its extensions can share data):</p>
     <ul>
       <li>Your first name (entered during onboarding)</li>
-      <li>Prayer history (dates and text of prayers you've completed)</li>
-      <li>Streak and milestone data</li>
-      <li>Reflection entries (mood and connection scores)</li>
-      <li>Lock schedule preferences</li>
-      <li>App usage settings and onboarding state</li>
+      <li>Prayer history (dates and text of prayers you have completed)</li>
+      <li>Streak, grace-day, and milestone data</li>
+      <li>Reflection entries (mood and connection scores; any text you choose to enter)</li>
+      <li>Lock schedule and Screen Time selections (categories or apps you choose to block)</li>
+      <li>App preferences, settings, and onboarding state</li>
     </ul>
-    <p>This data is stored using Apple's <strong>UserDefaults</strong> and <strong>App Groups</strong> (for sharing data between the app and its extensions). It lives on your device and is not transmitted elsewhere.</p>
+    <p>This information stays on your device. We do not have access to it.</p>
 
-    <h2>2. Screen Time &amp; App Blocking</h2>
-    <p>Prayer First uses Apple's <strong>Screen Time API (Family Controls / ManagedSettings)</strong> to block apps you choose until you complete your daily prayer. This permission is granted by you during onboarding and can be revoked at any time in iOS Settings → Screen Time. Prayer First does not have access to your Screen Time usage data beyond what is necessary to apply and remove the blocks you configure.</p>
+    <h3>2.2 Information Apple shares with us when you purchase a subscription</h3>
+    <p>If you purchase a subscription or in-app purchase, the transaction is processed by Apple through the App Store. <strong>We do not receive your name, email address, payment card information, or billing address.</strong> From Apple, we receive only aggregated and anonymized sales and subscription reports (for example: number of new subscribers, churn, country) and, in connection with our subscription management tooling, a randomized identifier that lets us validate that your subscription is active. We use this information solely to operate and account for the subscription service.</p>
 
-    <h2>3. Notifications</h2>
-    <p>If you grant notification permission, Prayer First schedules local reminders on-device to nudge you toward your daily prayer. These notifications are generated and delivered entirely on your device — no notification server or push infrastructure is used.</p>
+    <h3>2.3 Information we do not collect</h3>
+    <ul>
+      <li>We do not collect your contacts, photos, location, microphone, or camera data.</li>
+      <li>We do not use third-party advertising SDKs.</li>
+      <li>We do not use third-party analytics or crash-reporting SDKs.</li>
+      <li>We do not sell, rent, or share personal information with data brokers.</li>
+    </ul>
 
-    <h2>4. Analytics &amp; Crash Reporting</h2>
-    <p>Prayer First does not use any third-party analytics, advertising, or crash reporting SDKs. No data is shared with advertising networks or data brokers.</p>
+    <h2>3. Screen Time &amp; App Blocking (Family Controls)</h2>
+    <p>Prayer First uses Apple's <strong>Screen Time / Family Controls (ManagedSettings, DeviceActivity, FamilyControls)</strong> frameworks to block apps you choose until you complete your daily prayer. Apple's Screen Time framework is designed so that the App can apply restrictions you have authorized <em>without</em> Apple disclosing the underlying list of installed apps or usage data to us. The selections you make are tokenized by iOS and stored on your device. You can revoke Screen Time authorization at any time in iOS Settings → Screen Time. We are not able to read, transmit, or store your Screen Time usage data.</p>
 
-    <h2>5. Children's Privacy</h2>
-    <p>Prayer First is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information through the app, please contact us and we will take steps to remove it.</p>
+    <h2>4. Notifications</h2>
+    <p>If you grant notification permission, Prayer First schedules <strong>local notifications</strong> on-device to remind you about your daily prayer. No push-notification server is used and no notification content is transmitted off your device.</p>
 
-    <h2>6. iCloud &amp; Backups</h2>
-    <p>Your data may be included in your device's standard iCloud backup if you have iCloud Backup enabled in your iOS settings. This is controlled entirely by Apple's backup system, not by Prayer First.</p>
+    <h2>5. iCloud Backups</h2>
+    <p>If you have iCloud Backup enabled in your iOS settings, the App's local data may be included in your standard device backup. iCloud backups are managed entirely by Apple under Apple's privacy policy. You can exclude the App from iCloud Backup at any time in iOS Settings → Apple ID → iCloud → Manage Storage.</p>
 
-    <h2>7. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Changes will be reflected on this page with an updated effective date. Continued use of the app after changes constitutes acceptance of the revised policy.</p>
+    <h2>6. Subscriptions &amp; Payments</h2>
+    <p>Subscriptions and in-app purchases are sold and processed by Apple through the App Store. Apple's <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a> governs the information you provide to Apple. We receive only the limited transactional information described in Section 2.2 and do not have access to your payment method.</p>
 
-    <h2>8. Contact Us</h2>
-    <p>If you have questions about this Privacy Policy, please contact us at:<br />
-    <a href="mailto:support@betterapplications.app">support@betterapplications.app</a></p>
+    <h2>7. How We Use Information</h2>
+    <p>To the extent we receive any information at all (Section 2.2), we use it only to:</p>
+    <ul>
+      <li>Validate that you have an active subscription so the App can unlock subscriber features;</li>
+      <li>Comply with our tax, accounting, and legal obligations;</li>
+      <li>Detect and prevent fraud or abuse of the subscription service;</li>
+      <li>Communicate with you if you contact us at the email address below.</li>
+    </ul>
+    <p>We do not use this information for advertising or to build a profile about you.</p>
+
+    <h2>8. Sharing &amp; Disclosure</h2>
+    <p>We do not sell or share your personal information for advertising or cross-context behavioral advertising. We may disclose limited information only:</p>
+    <ul>
+      <li>To <strong>service providers</strong> that operate on our behalf under contractual confidentiality and data-protection obligations (for example, our subscription validation provider, if any). A current list is available on request.</li>
+      <li>To <strong>comply with law</strong> or respond to lawful requests by public authorities, including to meet national security or law enforcement requirements.</li>
+      <li>To <strong>protect rights</strong>, property, or safety of Better Applications, our users, or others.</li>
+      <li>In connection with a <strong>merger, acquisition, financing, or sale</strong> of business assets, in which case we will require the recipient to honor the commitments in this Privacy Policy.</li>
+    </ul>
+
+    <h2>9. Data Retention</h2>
+    <p>Information stored on your device remains there until you delete the App, reset the App's data from within Settings, or remove the data manually. The limited subscription information we receive is retained only as long as required to operate the subscription service and meet our legal, tax, and accounting obligations (typically up to seven years for financial records under applicable U.S. law).</p>
+
+    <h2>10. Security</h2>
+    <p>We rely on Apple's iOS security model to protect data on your device, including device-level encryption and sandboxing of the App's container. No method of electronic storage is 100% secure, and we cannot guarantee absolute security. You are responsible for keeping your device passcode and Apple ID credentials secure.</p>
+
+    <h2>11. Children's Privacy</h2>
+    <p>Prayer First is rated <strong>4+</strong> in the App Store. We do not knowingly collect personal information from children under the age of 13. If we become aware of unintentional data collection from a child, we will delete it promptly. If you believe a child has provided personal information to us, please contact us at the email below.</p>
+
+    <h2>12. Your California Privacy Rights (CCPA / CPRA)</h2>
+    <p>If you are a California resident, the California Consumer Privacy Act, as amended by the California Privacy Rights Act ("CCPA"), gives you certain rights regarding your personal information.</p>
+    <p><strong>Categories of personal information collected in the last 12 months:</strong> Identifiers (the first name you enter and, from Apple, a randomized subscription identifier); commercial information (subscription status). We collect this information directly from you and from Apple, and we use it for the business purposes described in Section 7.</p>
+    <p><strong>Sale / sharing:</strong> We do <strong>not</strong> sell personal information and do <strong>not</strong> share personal information for cross-context behavioral advertising.</p>
+    <p><strong>Your rights:</strong> You have the right to (a) know what personal information we have about you; (b) request deletion; (c) request correction of inaccurate information; (d) limit the use of sensitive personal information (we do not collect any); and (e) be free from retaliation for exercising your rights. To exercise these rights, contact us at the email below. We will verify your request using the limited information we have.</p>
+
+    <h2>13. Your European Economic Area, UK, and Swiss Privacy Rights (GDPR / UK GDPR)</h2>
+    <p>If you are located in the European Economic Area, the United Kingdom, or Switzerland, the General Data Protection Regulation and equivalent laws give you rights regarding your personal data. For purposes of these laws, Better Applications LLC is the <strong>controller</strong> of the limited personal data described in Section 2.2.</p>
+    <p><strong>Legal bases:</strong> We process personal data on the bases of (a) performance of a contract (providing the subscription service you purchased); (b) our legitimate interests in operating, securing, and improving the service; and (c) compliance with our legal obligations.</p>
+    <p><strong>Special-category data:</strong> Because the App is a Christian prayer application, your use of the App may reveal information about your religious beliefs &mdash; a "special category" of personal data under GDPR Article 9. Prayer content, reflections, and related personal data remain on your device and are not transmitted to us. To the extent any processing of such data by Better Applications occurs, it is based on your explicit consent (GDPR Article 9(2)(a)), provided through your voluntary decision to download and use the App.</p>
+    <p><strong>Your rights:</strong> Access, rectification, erasure, restriction, objection, and portability. You also have the right to lodge a complaint with your local data protection authority.</p>
+    <p><strong>International transfers:</strong> We are located in the United States. Where personal data is transferred outside the EEA, UK, or Switzerland, we rely on appropriate safeguards (for example, the European Commission's Standard Contractual Clauses) where required.</p>
+    <p>To exercise your rights, contact us at the email below.</p>
+
+    <h2>14. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will post the revised version on this page with an updated "Last updated" date. Material changes will be highlighted within the App or on this site. Your continued use of the App after the effective date constitutes acceptance of the revised policy.</p>
+
+    <h2>15. Contact Us</h2>
+    <p>Better Applications LLC<br />
+    Email: <a href="mailto:support@betterapplications.app">support@betterapplications.app</a></p>
   </main>
 
   <footer>
-    <span class="footer-copy">© 2025 Prayer First. All rights reserved.</span>
+    <span class="footer-copy">© 2026 Better Applications LLC. All rights reserved.</span>
     <nav class="footer-links">
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Service</a>

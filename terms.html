@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terms of Service — Prayer First</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -44,10 +46,20 @@
       font-family: 'Lora', serif; font-size: 1.15rem; font-weight: 600;
       margin: 40px 0 12px; color: var(--forest);
     }
+    .doc h3 {
+      font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600;
+      margin: 24px 0 8px; color: var(--forest);
+    }
     .doc p { font-size: 0.95rem; line-height: 1.75; color: #3a4a3b; margin-bottom: 14px; }
     .doc ul { padding-left: 20px; margin-bottom: 14px; }
     .doc ul li { font-size: 0.95rem; line-height: 1.75; color: #3a4a3b; margin-bottom: 6px; }
     .doc a { color: var(--sage); text-decoration: underline; }
+    .doc strong.caps { text-transform: uppercase; letter-spacing: 0.02em; font-size: 0.92rem; }
+    .doc .callout {
+      background: var(--card); border-left: 3px solid var(--sage);
+      padding: 14px 18px; margin: 18px 0; border-radius: 4px;
+      font-size: 0.92rem; line-height: 1.7;
+    }
     footer {
       border-top: 1px solid rgba(44,62,45,0.1); padding: 28px 40px;
       display: flex; align-items: center; justify-content: space-between;
@@ -69,50 +81,155 @@
 
   <main class="doc">
     <p class="doc-eyebrow">Legal</p>
-    <h1>Terms of Service</h1>
-    <p class="doc-meta">Effective date: May 3, 2025 &nbsp;·&nbsp; Last updated: May 3, 2025</p>
+    <h1>Terms of Service &amp; End User License Agreement</h1>
+    <p class="doc-meta">Effective date: May 13, 2026 &nbsp;·&nbsp; Last updated: May 13, 2026</p>
 
-    <p>Please read these Terms of Service ("Terms") carefully before using the Prayer First iOS application ("App") operated by Prayer First ("we", "us", or "our"). By downloading or using the App, you agree to be bound by these Terms.</p>
+    <div class="callout">
+      <strong>Please read these Terms carefully.</strong> They contain important provisions, including a <strong>binding arbitration agreement and class-action waiver</strong> in Section 17, which require you to resolve disputes with us individually rather than as part of a class action.
+    </div>
 
-    <h2>1. Use of the App</h2>
-    <p>Prayer First is a personal productivity and spiritual habit app designed for individual, non-commercial use. You may use the App only for lawful purposes and in accordance with these Terms. You agree not to:</p>
+    <p>These Terms of Service and End User License Agreement (collectively, the "<strong>Terms</strong>") form a binding agreement between you ("you" or "User") and <strong>Better Applications LLC</strong>, a New Jersey limited liability company doing business as Prayer First ("<strong>Better Applications</strong>," "we," "us," or "our"), governing your access to and use of the Prayer First mobile application and any related services (collectively, the "<strong>App</strong>").</p>
+
+    <p>By downloading, installing, or using the App, you agree to be bound by these Terms and our <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not download or use the App.</p>
+
+    <h2>1. Eligibility</h2>
+    <p>You must be at least <strong>13 years of age</strong> to use the App. If you are under the age of majority in your jurisdiction (typically 18), you may use the App only with the consent and supervision of a parent or legal guardian who agrees to these Terms on your behalf. By using the App, you represent and warrant that you meet these eligibility requirements.</p>
+
+    <h2>2. License Grant</h2>
+    <p>Subject to your compliance with these Terms, Better Applications grants you a <strong>limited, personal, non-exclusive, non-transferable, non-sublicensable, revocable license</strong> to download and use one copy of the App on Apple-branded products that you own or control, solely for your personal, non-commercial use, and as permitted by the Apple Media Services Terms and Conditions and the Apple App Store Usage Rules.</p>
+    <p>All rights not expressly granted to you are reserved by Better Applications and its licensors.</p>
+
+    <h2>3. Acceptable Use</h2>
+    <p>You agree not to:</p>
     <ul>
-      <li>Use the App in any way that violates applicable local, national, or international law</li>
-      <li>Attempt to reverse engineer, decompile, or disassemble the App</li>
-      <li>Use the App to harm, harass, or impersonate any person</li>
+      <li>Use the App in violation of any applicable law or regulation;</li>
+      <li>Reverse engineer, decompile, disassemble, or otherwise attempt to derive the source code of the App, except to the extent such restriction is prohibited by applicable law;</li>
+      <li>Modify, adapt, translate, or create derivative works based on the App;</li>
+      <li>Remove, alter, or obscure any proprietary notices on the App;</li>
+      <li>Use the App to harm, harass, threaten, defame, or impersonate any person, or to upload or transmit any unlawful, infringing, or objectionable content;</li>
+      <li>Use the App in connection with any commercial, resale, or service-bureau purpose, or to develop a competing product;</li>
+      <li>Circumvent, disable, or interfere with any security or access-control feature of the App;</li>
+      <li>Access the App through automated means (bots, scrapers, etc.) other than through publicly documented APIs (if any).</li>
     </ul>
 
-    <h2>2. Screen Time Permissions</h2>
-    <p>Prayer First uses Apple's Screen Time API to block apps of your choosing until you complete a prayer session. By granting Screen Time permission, you authorize the App to apply and remove app restrictions on your device. You can revoke this permission at any time via iOS Settings → Screen Time. We are not responsible for any unintended app blocking resulting from your configuration choices.</p>
+    <h2>4. Screen Time &amp; Family Controls Permissions</h2>
+    <p>The App uses Apple's Screen Time / Family Controls frameworks to apply restrictions to apps and categories you select. By granting Screen Time authorization, you authorize the App to apply and remove restrictions in accordance with your settings. You acknowledge and agree that:</p>
+    <ul>
+      <li><strong>You are solely responsible</strong> for the apps and categories you choose to block and for any consequences arising from blocking access to those apps (including, without limitation, missed notifications, communications, or services);</li>
+      <li>You may revoke Screen Time authorization at any time in iOS Settings → Screen Time;</li>
+      <li>The App relies on Apple-provided system frameworks whose behavior is outside of our control, and we make no guarantees regarding their availability, accuracy, or operation.</li>
+    </ul>
 
-    <h2>3. Intellectual Property</h2>
-    <p>The App, including its design, text, graphics, and code, is owned by Prayer First and protected by applicable intellectual property laws. You are granted a limited, non-exclusive, non-transferable license to use the App on your personal iOS device solely for your personal, non-commercial use.</p>
+    <h2>5. Subscriptions, Purchases, and Auto-Renewal</h2>
+    <p>Certain features of the App are available only through a paid subscription or in-app purchase ("<strong>Paid Features</strong>"). Pricing, billing frequency, and any free trial period for Paid Features are disclosed in the App at the point of purchase.</p>
 
-    <h2>4. Scripture &amp; Content</h2>
-    <p>Biblical scripture displayed in the App is drawn from the public domain. Curated verse selections and app-generated content are the property of Prayer First.</p>
+    <h3>5.1 How purchases work</h3>
+    <p>All purchases are made through your Apple ID and are processed by Apple under the Apple Media Services Terms and Conditions. We do not collect or process your payment information.</p>
 
-    <h2>5. Disclaimer of Warranties</h2>
-    <p>The App is provided "as is" and "as available" without warranties of any kind, express or implied. We do not warrant that the App will be uninterrupted, error-free, or free of viruses or other harmful components. Your use of the App is at your sole risk.</p>
+    <h3>5.2 Auto-renewal</h3>
+    <p><strong>Subscriptions automatically renew</strong> at the end of each billing period (for example, monthly or annually) at the then-current price for the corresponding term, unless you cancel at least 24 hours before the end of the current period. Your Apple ID account will be charged for renewal within 24 hours prior to the end of the current period. You can manage and cancel your subscription by going to your iOS Settings → [Your Name] → Subscriptions, or via the App Store.</p>
 
-    <h2>6. Limitation of Liability</h2>
-    <p>To the fullest extent permitted by law, Prayer First shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the App, even if we have been advised of the possibility of such damages.</p>
+    <h3>5.3 Free trial</h3>
+    <p>Prayer First offers an introductory <strong>3-day free trial</strong> for new subscribers. The free trial begins when you start the subscription through the App Store. You will not be charged during the 3-day trial period. <strong>If you do not cancel at least 24 hours before the end of the 3-day trial, your subscription will automatically convert to a paid subscription and your Apple ID will be charged the then-current subscription price.</strong> The trial is available only to users who have not previously subscribed to Prayer First or received a free trial of Prayer First. You may cancel at any time during the trial by going to iOS Settings → [Your Name] → Subscriptions and turning off auto-renewal; cancelling will not refund any subscription already converted. Any unused portion of the free trial is forfeited if you purchase a subscription before the trial ends. We may modify or discontinue the free trial offer at any time for future users without notice.</p>
 
-    <h2>7. Third-Party Services</h2>
-    <p>The App is distributed through Apple's App Store and relies on Apple's Screen Time framework. Your use of the App is also subject to Apple's Terms of Service. We are not responsible for Apple's policies or services.</p>
+    <h3>5.4 Refunds</h3>
+    <p>All purchases are final and non-refundable except as required by applicable law or as determined by Apple in its sole discretion. Refund requests must be directed to Apple via <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>. We do not process refunds directly.</p>
 
-    <h2>8. Changes to These Terms</h2>
-    <p>We may revise these Terms at any time. Changes will be posted on this page with an updated effective date. Continued use of the App after changes are posted constitutes your acceptance of the revised Terms.</p>
+    <h3>5.5 Price changes</h3>
+    <p>We may change the price of a subscription from time to time. Where required by law, we will provide reasonable advance notice of any price increase. If you do not agree to a price change, you must cancel your subscription before the change takes effect.</p>
 
-    <h2>9. Governing Law</h2>
-    <p>These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which Prayer First operates, without regard to its conflict of law provisions.</p>
+    <h2>6. Not Medical, Mental Health, or Religious Advice</h2>
+    <p>Prayer First is a personal wellness and spiritual-habit tool. It is <strong>not</strong> a substitute for professional medical, psychological, psychiatric, or pastoral advice, diagnosis, or treatment. If you are experiencing a medical or mental-health emergency, contact emergency services or a qualified professional. Reliance on any content within the App is solely at your own risk.</p>
 
-    <h2>10. Contact Us</h2>
-    <p>If you have questions about these Terms, please contact us at:<br />
-    <a href="mailto:support@betterapplications.app">support@betterapplications.app</a></p>
+    <h2>7. Scripture, Content, and Intellectual Property</h2>
+    <p>Biblical scripture displayed in the App is drawn from public-domain translations. All other content, including the App's design, code, text, graphics, user interface, audio, illustrations, trademarks (including "Prayer First" and the Prayer First logo), and curated verse selections, is owned by Better Applications or its licensors and is protected by U.S. and international copyright, trademark, and other intellectual-property laws. Nothing in these Terms grants you any right or license in our intellectual property except as expressly stated.</p>
+
+    <h2>8. User Content</h2>
+    <p>The App allows you to create and store personal entries on your device (for example, reflections, prayers, mood scores). This content is stored locally on your device and is not transmitted to us. <strong>You retain all rights in your content.</strong> You are solely responsible for your content and for backing it up. We have no obligation to preserve or recover content stored on your device.</p>
+
+    <h2>9. Feedback</h2>
+    <p>If you send us suggestions, ideas, or other feedback about the App, you grant Better Applications a worldwide, perpetual, irrevocable, royalty-free license to use that feedback for any purpose without obligation or compensation to you.</p>
+
+    <h2>10. Third-Party Services and Devices</h2>
+    <p>The App is distributed through the Apple App Store and depends on Apple-provided frameworks, iOS, your Apple ID, and your device hardware. Your use of these third-party services is governed by their own terms. We are not responsible for any third-party service, including any failure, downtime, or change to such service.</p>
+
+    <h2>11. Updates and Changes to the App</h2>
+    <p>We may release updates, bug fixes, and new features from time to time. We may also modify, suspend, or discontinue any feature of the App at any time, with or without notice. We are not liable to you or any third party for any modification, suspension, or discontinuance of the App.</p>
+
+    <h2>12. Termination</h2>
+    <p>These Terms remain in effect until terminated. You may terminate by deleting the App from your device and cancelling any subscription. We may suspend or terminate your license to use the App at any time, with or without cause and with or without notice, including if we reasonably believe you have violated these Terms. Sections 6 through 19 will survive termination.</p>
+
+    <h2>13. Disclaimer of Warranties</h2>
+    <p><strong class="caps">The App is provided "AS IS" and "AS AVAILABLE," with all faults and without warranty of any kind.</strong> To the maximum extent permitted by applicable law, Better Applications and its affiliates, officers, employees, agents, suppliers, and licensors expressly disclaim all warranties, whether express, implied, statutory, or otherwise, including without limitation any implied warranties of <strong class="caps">merchantability, fitness for a particular purpose, title, and non-infringement</strong>, and any warranties arising out of course of dealing or usage of trade.</p>
+    <p>We do not warrant that the App will be uninterrupted, timely, secure, error-free, or free of viruses or other harmful components, or that any errors will be corrected. Some jurisdictions do not allow the exclusion of certain warranties, so some of the above exclusions may not apply to you.</p>
+
+    <h2>14. Limitation of Liability</h2>
+    <p><strong class="caps">To the maximum extent permitted by applicable law, in no event will Better Applications or its affiliates, officers, directors, employees, agents, suppliers, or licensors be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages</strong>, including without limitation damages for loss of profits, revenue, data, use, goodwill, or other intangible losses, arising out of or in connection with your use of, or inability to use, the App, even if we have been advised of the possibility of such damages.</p>
+    <p><strong class="caps">In no event will Better Applications' total aggregate liability to you for all claims arising out of or relating to these Terms or the App exceed the greater of (a) the amount you paid to Apple for the App and any subscriptions in the twelve months preceding the event giving rise to the claim, or (b) fifty U.S. dollars (US$50.00).</strong></p>
+    <p>Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so the above may not apply to you in full.</p>
+
+    <h2>15. Indemnification</h2>
+    <p>You agree to defend, indemnify, and hold harmless Better Applications and its affiliates, officers, directors, employees, agents, suppliers, and licensors from and against any and all claims, damages, liabilities, losses, costs, and expenses (including reasonable attorneys' fees) arising out of or in connection with: (a) your use or misuse of the App; (b) your violation of these Terms; (c) your violation of any applicable law or the rights of any third party; or (d) your content.</p>
+
+    <h2>16. Apple-Specific Terms (EULA Schedule)</h2>
+    <p>The following terms apply to your use of the App on an Apple-branded device:</p>
+    <ul>
+      <li><strong>Acknowledgment.</strong> These Terms are concluded between you and Better Applications only, and not with Apple. Better Applications, not Apple, is solely responsible for the App and its content.</li>
+      <li><strong>Scope of license.</strong> Your license is limited to the non-transferable license set forth in Section 2 of these Terms, subject to the Apple Media Services Terms and Conditions and the App Store Usage Rules.</li>
+      <li><strong>Maintenance and support.</strong> Better Applications is solely responsible for any maintenance and support services for the App. Apple has no obligation whatsoever to furnish any maintenance or support services with respect to the App.</li>
+      <li><strong>Warranty.</strong> Better Applications is solely responsible for any product warranties, whether express or implied by law, to the extent not effectively disclaimed. In the event of any failure of the App to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price (if any) for the App to you. To the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the App, and any other claims, losses, liabilities, damages, costs, or expenses attributable to any failure to conform to any warranty will be Better Applications' sole responsibility.</li>
+      <li><strong>Product claims.</strong> Better Applications, not Apple, is responsible for addressing any claims by you or any third party relating to the App or your possession and/or use of the App, including but not limited to (i) product liability claims; (ii) any claim that the App fails to conform to any applicable legal or regulatory requirement; and (iii) claims arising under consumer-protection, privacy, or similar legislation.</li>
+      <li><strong>Intellectual property rights.</strong> In the event of any third-party claim that the App or your possession and use of the App infringes that third party's intellectual property rights, Better Applications, not Apple, will be solely responsible for the investigation, defense, settlement, and discharge of any such infringement claim.</li>
+      <li><strong>Legal compliance.</strong> You represent and warrant that (i) you are not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a "terrorist supporting" country; and (ii) you are not listed on any U.S. Government list of prohibited or restricted parties.</li>
+      <li><strong>Developer name and address.</strong> Any questions, complaints, or claims with respect to the App should be directed to: Better Applications LLC, 180 River Dr., Jersey City, NJ 07310, United States, email <a href="mailto:support@betterapplications.app">support@betterapplications.app</a>.</li>
+      <li><strong>Third-party terms of agreement.</strong> You must comply with applicable third-party terms of agreement when using the App.</li>
+      <li><strong>Third-party beneficiary.</strong> You and Better Applications acknowledge and agree that Apple and Apple's subsidiaries are third-party beneficiaries of these Terms, and that, upon your acceptance of these Terms, Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms against you as a third-party beneficiary.</li>
+    </ul>
+
+    <h2>17. Dispute Resolution; Binding Arbitration; Class-Action Waiver</h2>
+    <p><strong class="caps">Please read this section carefully. It affects your legal rights.</strong></p>
+
+    <h3>17.1 Informal resolution</h3>
+    <p>Before filing any claim, you agree to first contact us at <a href="mailto:support@betterapplications.app">support@betterapplications.app</a> and provide a written description of your claim and your contact information. You and Better Applications agree to use good-faith efforts to resolve any dispute informally for at least 30 days before initiating arbitration.</p>
+
+    <h3>17.2 Binding arbitration</h3>
+    <p>If the dispute is not resolved informally, <strong>you and Better Applications agree that any dispute, claim, or controversy arising out of or relating to these Terms or the App will be resolved by binding, individual arbitration</strong> administered by the American Arbitration Association ("AAA") under its Consumer Arbitration Rules, and not in court. The arbitration will be conducted by a single arbitrator. The seat of the arbitration will be in the State of New Jersey, but in-person hearings may be conducted in the county of your residence at your election, or telephonically/by videoconference. Judgment on the arbitrator's award may be entered in any court of competent jurisdiction. The Federal Arbitration Act governs the interpretation and enforcement of this Section 17.</p>
+
+    <h3>17.3 Class-action waiver</h3>
+    <p><strong class="caps">You and Better Applications agree that each may bring claims against the other only in your or its individual capacity, and not as a plaintiff or class member in any purported class, collective, consolidated, or representative proceeding.</strong> The arbitrator may not consolidate more than one person's claims or preside over any form of class or representative proceeding.</p>
+
+    <h3>17.4 Exceptions</h3>
+    <p>Either party may bring an individual action in small-claims court for disputes within the scope of that court's jurisdiction. Either party may also seek injunctive or equitable relief in a court of competent jurisdiction to protect its intellectual property rights.</p>
+
+    <h3>17.5 Opt-out</h3>
+    <p>You may opt out of this arbitration agreement by sending written notice of your decision to opt out to <a href="mailto:support@betterapplications.app">support@betterapplications.app</a> within 30 days of first accepting these Terms. The notice must include your name, the email associated with your Apple ID purchase (if any), and a clear statement that you wish to opt out. Opting out will not affect any other provision of these Terms.</p>
+
+    <h3>17.6 Severability of this section</h3>
+    <p>If the class-action waiver is found to be unenforceable as to any claim, that claim must be severed from the arbitration and brought in court, while all other claims continue in arbitration. If any other portion of this Section 17 is found unenforceable, the remainder will continue in effect.</p>
+
+    <h2>18. Governing Law and Venue</h2>
+    <p>These Terms are governed by the laws of the <strong>State of New Jersey</strong>, without regard to its conflict-of-laws principles. Subject to Section 17, the exclusive venue for any action not subject to arbitration will be the state or federal courts located in New Jersey, and you consent to the personal jurisdiction of those courts. The United Nations Convention on Contracts for the International Sale of Goods does not apply.</p>
+
+    <h2>19. General</h2>
+    <p><strong>Entire agreement.</strong> These Terms and the <a href="privacy.html">Privacy Policy</a> constitute the entire agreement between you and Better Applications regarding the App and supersede all prior agreements.</p>
+    <p><strong>Severability.</strong> If any provision is held invalid or unenforceable, the remaining provisions will remain in full force and effect.</p>
+    <p><strong>No waiver.</strong> Our failure to enforce any right or provision will not be deemed a waiver of that right or provision.</p>
+    <p><strong>Assignment.</strong> You may not assign or transfer these Terms without our prior written consent. We may assign these Terms freely, including in connection with a merger, acquisition, or sale of assets.</p>
+    <p><strong>Force majeure.</strong> We are not liable for any failure or delay caused by events beyond our reasonable control.</p>
+    <p><strong>Notices to us.</strong> Send notices to <a href="mailto:support@betterapplications.app">support@betterapplications.app</a> or to the address in Section 16.</p>
+    <p><strong>Notices to you.</strong> We may provide notices via the App or by email to any address you provide us.</p>
+    <p><strong>Export controls.</strong> You agree to comply with all applicable U.S. export-control laws and regulations.</p>
+
+    <h2>20. Changes to These Terms</h2>
+    <p>We may revise these Terms from time to time. The "Last updated" date at the top of this page indicates when the Terms were last revised. Material changes will be highlighted within the App or on this site. Your continued use of the App after the effective date constitutes your acceptance of the revised Terms. If you do not agree to the revised Terms, you must stop using the App.</p>
+
+    <h2>21. Contact Us</h2>
+    <p>Better Applications LLC<br />
+    Email: <a href="mailto:support@betterapplications.app">support@betterapplications.app</a></p>
   </main>
 
   <footer>
-    <span class="footer-copy">© 2025 Prayer First. All rights reserved.</span>
+    <span class="footer-copy">© 2026 Better Applications LLC. All rights reserved.</span>
     <nav class="footer-links">
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Service</a>
