@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prayer First — Start Your Day With God</title>
-  <meta name="description" content="Prayer First helps you build a daily prayer habit by locking distracting apps until you've prayed. Start your day with God." />
+  <meta name="description" content="Prayer First locks your distracting apps until you've spent time in prayer. Build the daily habit that changes everything." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -17,379 +17,223 @@
       --sage:   #7D9B76;
       --gold:   #D4A574;
       --muted:  #6B7B6C;
-      --card:   #F3F1EC;
     }
 
-    html { scroll-behavior: smooth; }
+    html, body { height: 100%; }
 
     body {
       font-family: 'Inter', sans-serif;
       background: var(--cream);
       color: var(--forest);
-      min-height: 100vh;
-    }
-
-    /* ── NAV ── */
-    nav {
       display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch;
+      width: 100%;
+      animation: fade 1.4s ease-out both;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── LEFT ── */
+    .copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px clamp(32px, 6vw, 88px);
+      max-width: 720px;
+      margin-left: auto;
+    }
+
+    .mark {
+      display: inline-flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 20px 40px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .nav-logo {
-      font-family: 'Lora', serif;
-      font-size: 1.25rem;
-      font-weight: 600;
-      color: var(--forest);
-      text-decoration: none;
-      letter-spacing: -0.01em;
-    }
-
-    .nav-cta {
-      background: var(--forest);
-      color: var(--cream);
-      text-decoration: none;
-      padding: 10px 22px;
+      gap: 16px;
+      margin-bottom: 56px;
+      padding: 10px 20px 10px 10px;
+      background: rgba(255,255,255,0.6);
+      border: 1px solid rgba(44,62,45,0.06);
       border-radius: 100px;
-      font-size: 0.875rem;
+      backdrop-filter: blur(8px);
+      align-self: flex-start;
+      box-shadow: 0 4px 16px rgba(44,62,45,0.04);
+    }
+
+    .mark img {
+      width: 44px;
+      height: 44px;
+      border-radius: 11px;
+      box-shadow: 0 4px 12px rgba(44,62,45,0.15);
+    }
+
+    .mark span {
+      font-family: 'Lora', serif;
       font-weight: 500;
-      transition: opacity 0.2s;
-    }
-    .nav-cta:hover { opacity: 0.8; }
-
-    /* ── HERO ── */
-    .hero {
-      text-align: center;
-      padding: 80px 24px 60px;
-      max-width: 760px;
-      margin: 0 auto;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+      color: var(--forest);
     }
 
-    .hero-eyebrow {
-      display: inline-block;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--sage);
+    h1 {
+      font-family: 'Lora', serif;
+      font-weight: 500;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--forest);
       margin-bottom: 20px;
     }
 
-    .hero h1 {
-      font-family: 'Lora', serif;
-      font-size: clamp(2.4rem, 6vw, 3.8rem);
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-      color: var(--forest);
-      margin-bottom: 24px;
-    }
-
-    .hero h1 em {
+    h1 em {
       font-style: italic;
-      color: var(--sage);
+      color: var(--gold);
     }
 
-    .hero p {
-      font-size: 1.1rem;
-      line-height: 1.7;
+    h1 em.sage { color: var(--sage); }
+
+    .tagline {
+      font-family: 'Lora', serif;
+      font-size: clamp(1.35rem, 2vw, 1.6rem);
+      line-height: 1.5;
       color: var(--muted);
+      margin-bottom: 44px;
       max-width: 520px;
-      margin: 0 auto 40px;
+    }
+
+    .tagline em {
+      font-style: italic;
+      color: var(--gold);
     }
 
     .app-store-btn {
       display: inline-block;
-      transition: transform 0.2s, opacity 0.2s;
+      transition: transform 0.3s ease, opacity 0.3s ease;
     }
     .app-store-btn:hover { transform: translateY(-2px); opacity: 0.9; }
-    .app-store-btn img { height: 54px; }
+    .app-store-btn img { height: 56px; display: block; }
 
-    .hero-note {
+    .note {
       display: block;
       margin-top: 14px;
       font-size: 0.8rem;
       color: var(--muted);
+      letter-spacing: 0.02em;
     }
 
-    /* ── PHONE MOCKUP ── */
-    .phone-wrap {
+    /* ── RIGHT (panel) ── */
+    .demo {
+      background: linear-gradient(160deg, #3A5240, var(--forest));
       display: flex;
-      justify-content: center;
-      padding: 20px 24px 60px;
-    }
-
-    .phone {
-      width: 240px;
-      height: 480px;
-      background: var(--forest);
-      border-radius: 40px;
-      border: 8px solid var(--forest);
-      box-shadow: 0 40px 80px rgba(44,62,45,0.25);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 16px;
-      padding: 32px 20px;
-      position: relative;
+      padding: 80px 40px;
+      min-height: 600px;
     }
 
-    .phone::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 50%;
-      transform: translateX(-50%);
-      width: 80px; height: 6px;
-      background: rgba(255,255,255,0.15);
-      border-radius: 0 0 6px 6px;
-    }
-
-    .phone-icon {
-      font-size: 3rem;
-      line-height: 1;
-    }
-
-    .phone-verse {
+    .demo video,
+    .demo .demo-placeholder {
+      width: 100%;
+      max-width: 320px;
+      aspect-ratio: 9 / 19.5;
+      border-radius: 36px;
+      background: rgba(250,249,246,0.05);
+      box-shadow:
+        0 40px 80px rgba(0,0,0,0.35),
+        0 12px 24px rgba(0,0,0,0.15);
+      object-fit: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-family: 'Lora', serif;
       font-style: italic;
-      font-size: 0.8rem;
-      color: rgba(250,249,246,0.85);
-      text-align: center;
-      line-height: 1.6;
-    }
-
-    .phone-verse cite {
-      display: block;
-      font-style: normal;
-      font-size: 0.7rem;
-      color: var(--gold);
-      margin-top: 6px;
-    }
-
-    .phone-pill {
-      background: var(--gold);
-      color: var(--forest);
-      font-weight: 600;
-      font-size: 0.75rem;
-      padding: 10px 24px;
-      border-radius: 100px;
-    }
-
-    /* ── FEATURES ── */
-    .features {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px 24px 80px;
-    }
-
-    .features-label {
-      text-align: center;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--sage);
-      margin-bottom: 48px;
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .feature-card {
-      background: var(--card);
-      border-radius: 20px;
-      padding: 32px 28px;
-    }
-
-    .feature-icon {
-      font-size: 1.8rem;
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    .feature-card h3 {
-      font-family: 'Lora', serif;
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 10px;
-      color: var(--forest);
-    }
-
-    .feature-card p {
+      color: rgba(250,249,246,0.5);
       font-size: 0.9rem;
-      line-height: 1.65;
-      color: var(--muted);
-    }
-
-    /* ── QUOTE ── */
-    .quote-section {
-      background: var(--forest);
-      padding: 80px 24px;
       text-align: center;
-    }
-
-    .quote-section blockquote {
-      font-family: 'Lora', serif;
-      font-style: italic;
-      font-size: clamp(1.3rem, 3vw, 1.8rem);
-      color: var(--cream);
-      max-width: 640px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-
-    .quote-section cite {
-      display: block;
-      font-family: 'Inter', sans-serif;
-      font-style: normal;
-      font-size: 0.85rem;
-      color: var(--gold);
-      margin-top: 20px;
-      letter-spacing: 0.06em;
-    }
-
-    /* ── FINAL CTA ── */
-    .final-cta {
-      text-align: center;
-      padding: 80px 24px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .final-cta h2 {
-      font-family: 'Lora', serif;
-      font-size: clamp(1.8rem, 4vw, 2.6rem);
-      margin-bottom: 16px;
-      line-height: 1.2;
-    }
-
-    .final-cta p {
-      color: var(--muted);
-      margin-bottom: 36px;
-      font-size: 1rem;
-      line-height: 1.6;
+      padding: 24px;
     }
 
     /* ── FOOTER ── */
     footer {
-      border-top: 1px solid rgba(44,62,45,0.1);
-      padding: 32px 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .footer-copy {
-      font-size: 0.8rem;
-      color: var(--muted);
+      padding: 32px 24px;
+      text-align: center;
+      background: var(--cream);
     }
 
     .footer-links {
       display: flex;
-      gap: 24px;
+      justify-content: center;
+      gap: 28px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
     }
 
     .footer-links a {
-      font-size: 0.8rem;
+      font-size: 0.82rem;
       color: var(--muted);
       text-decoration: none;
       transition: color 0.2s;
     }
     .footer-links a:hover { color: var(--forest); }
 
-    @media (max-width: 600px) {
-      nav { padding: 16px 20px; }
-      footer { padding: 28px 20px; justify-content: center; text-align: center; }
+    .footer-copy {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 900px) {
+      main { grid-template-columns: 1fr; }
+      .copy {
+        padding: 56px 28px 40px;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+      }
+      .mark { justify-content: center; }
+      .tagline { margin-left: auto; margin-right: auto; }
+      .demo { padding: 48px 28px; min-height: 0; }
+      .demo video, .demo .demo-placeholder { max-width: 260px; }
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <a class="nav-logo" href="/">Prayer First</a>
-    <a class="nav-cta" href="#download">Download</a>
-  </nav>
+  <main>
+    <div class="copy">
+      <div class="mark">
+        <img src="logo.png" alt="Prayer First" />
+        <span>Prayer First</span>
+      </div>
 
-  <section class="hero">
-    <span class="hero-eyebrow">iPhone App</span>
-    <h1>Start every morning<br /><em>with God,</em> not your feed.</h1>
-    <p>Prayer First locks your distracting apps until you've spent time in prayer — building the daily habit that changes everything.</p>
-    <a class="app-store-btn" href="https://apps.apple.com/app/idYOUR_APP_ID" id="download" target="_blank" rel="noopener">
-      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
-    </a>
-    <span class="hero-note">Free · iPhone · iOS 17+</span>
-  </section>
+      <h1>first <em>light.</em><br />first <em>thought.</em></h1>
 
-  <div class="phone-wrap">
-    <div class="phone">
-      <span class="phone-icon">🙏</span>
-      <p class="phone-verse">
-        "Seek first the kingdom of God and His righteousness."
-        <cite>Matthew 6:33</cite>
-      </p>
-      <div class="phone-pill">Pray Now</div>
+      <p class="tagline">let the first thing you reach for be <em>prayer.</em></p>
+
+      <a class="app-store-btn" href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank" rel="noopener">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
+      </a>
     </div>
-  </div>
 
-  <section class="features">
-    <p class="features-label">How it works</p>
-    <div class="features-grid">
-      <div class="feature-card">
-        <span class="feature-icon">🔒</span>
-        <h3>Lock What Distracts You</h3>
-        <p>Choose which apps get blocked each morning. Instagram, Twitter, YouTube — locked until you've prayed.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-icon">📖</span>
-        <h3>A New Verse Every Day</h3>
-        <p>Each prayer session opens with a hand-curated scripture to set your heart and mind for the day.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-icon">🌿</span>
-        <h3>Track Your Journey</h3>
-        <p>Watch your streaks grow, earn milestones, and see how consistent prayer is reshaping your life over time.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-icon">🔔</span>
-        <h3>Gentle Reminders</h3>
-        <p>Missed your morning prayer? Prayer First nudges you — graciously, not guilting — to come back to God.</p>
-      </div>
+    <div class="demo">
+      <div class="demo-placeholder">coming soon</div>
     </div>
-  </section>
-
-  <div class="quote-section">
-    <blockquote>
-      "But seek first the kingdom of God and His righteousness, and all these things will be added to you."
-      <cite>— Matthew 6:33</cite>
-    </blockquote>
-  </div>
-
-  <section class="final-cta">
-    <h2>Your phone can help you pray.</h2>
-    <p>Most apps are designed to pull you away from what matters. Prayer First puts God first — literally.</p>
-    <a class="app-store-btn" href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank" rel="noopener">
-      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
-    </a>
-  </section>
+  </main>
 
   <footer>
-    <span class="footer-copy">© 2025 Prayer First. All rights reserved.</span>
     <nav class="footer-links">
-      <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Service</a>
-      <a href="mailto:support@betterapplications.app">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
     </nav>
+    <div class="footer-copy">© 2026 Prayer First. All rights reserved.</div>
   </footer>
 
 </body>
